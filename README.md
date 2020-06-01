@@ -9,11 +9,11 @@
 
 > -o, --out 测试通过ip的保存路径。默认为/passip+输出时间.txt。
 
-> -p, --parallels [number] 默认线程数为20。
+> -p, --parallels [number] 默认线程数为 100。
 
-> -t, --timeout [float] 超时时间 单位为s 默认为2s。
+> -t, --timeout [float] 超时时间 单位为s 默认为 2s。
 
-> -n, --hostname 默认为谷歌。
+> -n, --hostname 默认为必应。
 
 > -h, --help 帮助。
 

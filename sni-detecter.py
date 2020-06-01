@@ -10,9 +10,9 @@ import concurrent.futures
 
 rin = 'task.txt'
 output = 'replace'
-timeout = 3
+timeout = 2
 parallels = 100
-hostname = 'jp01-awsls.freenetv.com'
+hostname = 'www.bing.com'
 passip = []
 
 times = 0
