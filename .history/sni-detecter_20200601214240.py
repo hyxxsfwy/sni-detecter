@@ -10,7 +10,7 @@ import concurrent.futures
 
 rin = 'task.txt'
 output = 'replace'
-timeout = 3
+timeout = 5
 parallels = 100
 hostname = 'jp01-awsls.freenetv.com'
 passip = []
@@ -54,7 +54,7 @@ if __name__ == '__main__':
 def worker (t,h):
     global times ,passip ,ipQueue
     try:
-        ip = ipQueue.get(timeout)
+        ip = ipQueue.get(timeout=5)
     except:
         pass
     else:
