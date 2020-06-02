@@ -102,5 +102,5 @@ try:
         f.writelines(v+'\n')
 finally:
     f.close()
-    print('bye,文件已写出到'+output+'，按Enter退出。')
-    input()
+    print('bye,文件已写出到'+output)
+    #input()
