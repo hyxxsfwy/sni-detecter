@@ -93,7 +93,7 @@ concurrent.futures.wait(all_task)
 executor.shutdown(wait=True)
 
 print ('√   finish  ' + '本次扫描了'+ str(times) +'个ip,'+'SNI_IP有'+ str(len(passip)) +'个。')
-if output == 'replace':
+if output == 'replace' and len(passip) > 0:
     name = time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time()))
     output = 'PassIp '+ name +'.txt'
 f = open (output,'w')
@@ -102,5 +102,5 @@ try:
         f.writelines(v+'\n')
 finally:
     f.close()
-    print('bye,文件已写出到'+output)
+    print('bye, flie = '+output+'\n')
     #input()
