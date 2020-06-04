@@ -95,7 +95,7 @@ executor.shutdown(wait=True)
 print ('√   finish  ' + '本次扫描了'+ str(times) +'个ip,'+'SNI_IP有'+ str(len(passip)) +'个。')
 if output == 'replace' and len(passip) > 0:
     name = time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time()))
-    output = 'PassIp '+ name +'.txt'
+    output = 'PassIp-'+ name +'.txt'
 f = open (output,'w')
 try:
     for v in passip:
